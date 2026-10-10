@@ -1,0 +1,22 @@
+[package]
+name = "neon-clash"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aige = { git = "https://github.com/pepechka-kun/AIGE-by-Devin.git", rev = "f998236bc44bf4683b1d8b607e037bb7ef70c040" }
+aige-render = { git = "https://github.com/pepechka-kun/AIGE-by-Devin.git", rev = "f998236bc44bf4683b1d8b607e037bb7ef70c040" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+schemars = "1.2"
+
+[dev-dependencies]
+aige-test = { git = "https://github.com/pepechka-kun/AIGE-by-Devin.git", rev = "f998236bc44bf4683b1d8b607e037bb7ef70c040" }
+aige-platform = { git = "https://github.com/pepechka-kun/AIGE-by-Devin.git", rev = "f998236bc44bf4683b1d8b607e037bb7ef70c040" }
+winit = "0.30"
+
+[profile.dev.package."*"]
+opt-level = 2
+
+[profile.release]
+lto = "thin"

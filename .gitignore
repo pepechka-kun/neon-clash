@@ -1,0 +1,10 @@
+/target/
+/dist/
+/*.app/
+/artifacts/*.json
+/artifacts/*.log
+/artifacts/*.zip
+/artifacts/*.app/
+.DS_Store
+__pycache__/
+*.pyc

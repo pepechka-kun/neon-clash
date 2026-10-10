@@ -1,0 +1,3 @@
+[net]
+# Use Git's configured credentials for the private AIGE repository.
+git-fetch-with-cli = true
